@@ -1,0 +1,36 @@
+name: "Firmware CI feature runner"
+description:
+  "Uses @bifravst/e2e-bdd-test-runner to run features files of a firmware."
+inputs:
+  job id:
+    description: "The ID of the job"
+    required: true
+  app version:
+    description:
+      "The version string to use for the app. This is used with the FOTA test."
+    required: true
+  aws access key id:
+    description: "Access Key ID for the Firmware CI Runner"
+    required: true
+  aws secret access key:
+    description: "Secret Access Key for the Firmware CI Runner"
+    required: true
+  aws region:
+    description: "AWS region to use"
+    required: false
+    default: us-west-1
+  broker hostname:
+    description: "AWS IoT broker hostname to use"
+    required: true
+  stack name:
+    description: "Stack name of the cloud backend to use"
+    required: false
+    default: bifravst
+  feature dir:
+    description: "Location of the feature files"
+    required: false
+    default: features
+
+runs:
+  using: "node12"
+  main: "build/index.js"

@@ -24,8 +24,8 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "@actions/core": "1.2.6",
-    "@aws-sdk/client-iot": "3.3.0",
-    "@aws-sdk/client-sts": "3.3.0",
+    "@aws-sdk/client-iot": "3.4.1",
+    "@aws-sdk/client-sts": "3.4.1",
     "@bifravst/cloudformation-helpers": "^5.0.2",
     "@bifravst/e2e-bdd-test-runner": "5.1.0",
     "@bifravst/firmware-ci-runner-aws": "2.1.13",
